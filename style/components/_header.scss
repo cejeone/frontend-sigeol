@@ -1,0 +1,84 @@
+.header-hero {
+     background-color: var(--secondary-color);
+     background-image: url("/assets/img/vector\ background\ hero.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+
+     .content-header {
+          padding-top: 30px;
+
+          .item-head {
+               display: flex;
+               flex-direction: column;
+               margin: 80px 0;
+               width: 50%;
+
+               @include media-breakpoint-down(md) {
+                    width: 100%;
+               }
+
+               .head-item-title {
+                    font-weight: 600;
+                    color: var(--default-color);
+
+               }
+
+               .head-item-desc {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 36px;
+                    color: var(--default-color);
+
+               }
+
+               a {
+                    margin-top: 10px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #FDFD15;
+               }
+
+          }
+
+          .item-count {
+               background-color: #38383845;
+
+               .list-count {
+                    padding: 5px;
+                    margin: 0;
+
+                    .icon-item {
+                         padding: 15px 5px;
+
+                         .item-icon {
+                              display: flex;
+                              align-items: center;
+                              height: 100px;
+                              margin: 5px 0;
+
+
+                              span {
+                                   margin-left: 15px;
+                                   font-size: 40px;
+                                   font-weight: 600;
+                                   color: #FDFD15;
+
+                              }
+                         }
+
+                         .item-text {
+                              color: var(--default-color);
+
+                              p {
+                                   font-size: 16px;
+                                   font-weight: 300;
+                              }
+                         }
+                    }
+               }
+          }
+
+     }
+}

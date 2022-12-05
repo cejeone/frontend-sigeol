@@ -1,0 +1,438 @@
+//dataset
+.dataset-content {
+     margin: 50px 0;
+
+     .item-dataset {
+          margin: 20px 0;
+
+          .dataset-title {
+               font-size: 25px;
+               font-weight: 600;
+               line-height: 47px;
+               color: #836820;
+
+               span {
+                    padding: 5px 20px;
+                    background-color: #FDEEC5;
+                    border-radius: 5px;
+               }
+
+          }
+     }
+
+     .list-dataset {
+          margin: 0;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          .item-dataset-col {
+
+               border: 1px solid rgba(128, 128, 128, 0.467);
+               border-radius: 5px;
+
+               .map-thumbnail {
+                    padding: 10px;
+                    text-align: center;
+
+                    img {
+                         width: 200px;
+                    }
+               }
+
+
+               .title-map {
+                    display: flex;
+                    background-color: #4A9ED3;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+
+                    span {
+                         font-size: 15px;
+                         font-weight: 500;
+                         color: var(--default-color);
+
+                    }
+               }
+
+               .desc-map {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+
+                    .desc {
+                         font-size: 14px;
+                         font-weight: 400;
+                    }
+
+                    .desc-more {
+                         margin-top: 10px;
+                         font-size: 14px;
+                         font-weight: 400;
+                         text-decoration: none;
+
+
+                    }
+
+
+               }
+          }
+
+          &.vector {
+               display: flex;
+               align-self: flex-end;
+
+               .link-more {
+                    position: relative;
+                    right: 220px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: var(--default-color);
+
+                    &:hover {
+                         color: #FEFE37;
+                    }
+               }
+          }
+
+     }
+}
+
+//storymap
+.storymap-content {
+     background-color: #4A9ED3;
+     background-image: url(/assets/img/vector\ background\ story\ map.svg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100%;
+
+     .container {
+          padding: 30px 0 50px 0;
+     }
+
+     .item-storymap {
+          padding: 20px 0;
+          display: flex;
+          justify-content: center;
+
+          .storymap-title {
+               font-size: 25px;
+               font-weight: 600;
+               line-height: 47px;
+               color: #2BA2A7;
+
+               span {
+                    padding: 5px 20px;
+                    background-color: #C5FBFD;
+                    border-radius: 5px;
+               }
+          }
+     }
+
+     .storymap-group {
+          display: flex;
+          align-items: center;
+
+          .btn-slider {
+               width: 50px;
+               height: 50px;
+               padding: 5px;
+               cursor: pointer;
+          }
+
+          .slick-slide {
+               transform: scale(0.9);
+          }
+
+          .slick-center {
+               transform: scale(1.0);
+               transition: all 0.5s ease-in-out;
+          }
+
+          .list-storymap {
+               border: 1px solid #fff;
+               border-radius: 5px;
+               margin: 0 30px;
+
+               .head-list {
+                    background-color: #fff;
+                    padding: 20px;
+                    width: 100%;
+
+                    img {
+                         width: 100%;
+                    }
+               }
+
+               .body-list {
+                    background-color: #D35F4A;
+                    border-radius: 5px;
+
+                    .title-desc {
+                         padding: 20px;
+
+                         i {
+                              position: absolute;
+                              color: #D35F4A;
+                              transform: rotate(-90deg);
+                              font-size: 30px;
+                              top: 290px;
+                         }
+
+                         .title {
+                              font-size: 14px;
+                              font-weight: 500;
+                              color: var(--default-color);
+
+                         }
+
+                         .desc {
+                              margin-top: 15px;
+                              font-size: 12px;
+                              font-weight: 300;
+                              color: var(--default-color);
+                         }
+
+                         .desc-more {
+                              margin-top: 30px;
+
+                              a {
+                                   font-size: 12px;
+                                   text-decoration: none;
+                                   color: var(--default-color);
+                              }
+
+                         }
+                    }
+               }
+          }
+     }
+}
+
+//webgis
+.webgis-content {
+     padding: 50px 0;
+
+     .item-webgis {
+          margin: 20px 0;
+
+          .webgis-title {
+               font-size: 25px;
+               font-weight: 600;
+               line-height: 47px;
+               color: #BC3498;
+
+               span {
+                    padding: 5px 20px;
+                    background-color: #FDC5EE;
+                    border-radius: 5px;
+               }
+
+          }
+     }
+
+     .table-webgis {
+          padding-top: 20px;
+
+          .thead-webgis {
+               background-color: #1FC1C7;
+               color: #fff;
+               font-weight: 500;
+          }
+
+          .page-item.active {
+               background-color: #1FC1C7 !important;
+               color: #fff !important;
+          }
+
+          .page-link {
+               color: #1FC1C7 !important;
+          }
+
+          .active>.page-link {
+               background-color: #1FC1C7 !important;
+               border: 1px solid #1FC1C7;
+               color: #fff !important;
+          }
+
+     }
+}
+
+//penghargaan
+.penghargaan-content {
+     padding: 50px 0;
+
+     .item-penghargaan {
+          margin: 20px 0;
+
+          .penghargaan-title {
+               font-size: 25px;
+               font-weight: 600;
+               line-height: 47px;
+               color: #D35050;
+
+               span {
+                    padding: 5px 20px;
+                    background-color: #FDC5C5;
+                    border-radius: 5px;
+               }
+
+          }
+
+          @include media-breakpoint-up(lg) {
+               margin-left: 330px;
+          }
+     }
+
+     .list-penghargaan {
+          margin: 0;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          .item-penghargaan-col {
+
+               border: 1px solid rgba(128, 128, 128, 0.467);
+               border-radius: 5px;
+
+               .penghargaan-thumbnail {
+                    padding: 10px;
+                    text-align: center;
+
+                    img {
+                         margin-top: -20px;
+                         width: 200px;
+                    }
+               }
+
+               .desc-penghargaan {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    background-color: #918C8E;
+                    color: var(--default-color);
+
+                    .title-penghargaan {
+                         font-size: 15px;
+                         font-weight: 500;
+                         color: #1FC1C7;
+                         background-color: var(--default-color);
+                         text-align: center;
+                         border-radius: 3px;
+                    }
+
+                    .desc {
+                         margin-top: 10px;
+                         font-size: 12px;
+                         font-weight: 400;
+                    }
+
+                    .desc-more {
+                         margin-top: 15px;
+                         font-size: 12px;
+                         font-weight: 300;
+                         text-decoration: none;
+                         text-align: center;
+
+
+                    }
+
+
+               }
+          }
+
+          &.vector {
+               display: flex;
+               align-self: flex-end;
+          }
+
+     }
+}
+
+//produk
+.produk-content {
+     padding: 50px 0;
+
+     .item-produk {
+          margin: 20px 0;
+
+          .produk-title {
+               font-size: 25px;
+               font-weight: 600;
+               line-height: 47px;
+               color: #2AA33D;
+
+               span {
+                    padding: 5px 20px;
+                    background-color: #C5FDCE;
+                    border-radius: 5px;
+               }
+
+          }
+     }
+
+     .list-produk {
+          .produk-group {
+               margin-top: 15px;
+               background-color: #F4F4F4;
+
+               .icon-title-produk {
+                    display: flex;
+                    align-items: center;
+                    padding: 20px 20px;
+                    border-radius: 5px;
+
+                    .icon-produk {
+                         margin-right: 15px;
+                    }
+               }
+          }
+
+          &.vector {
+               display: flex;
+               align-self: flex-end;
+          }
+     }
+}
+
+
+//mitra
+.mitra-content {
+     padding: 50px 0;
+
+     .item-mitra {
+          margin: 20px 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .mitra-title {
+               font-size: 25px;
+               font-weight: 600;
+               line-height: 47px;
+               color: #33A6AA;
+
+               span {
+                    padding: 5px 20px;
+                    background-color: #C5FBFD;
+                    border-radius: 5px;
+               }
+
+          }
+     }
+
+     .mitra-slide {
+          @include media-breakpoint-up(lg) {
+               margin: 0 100px;
+          }
+
+          .mitra-group {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+     }
+
+}

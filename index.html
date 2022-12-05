@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SIGEOL | Sistem Informasi Geografis Online Kabupaten Sumedang</title>
+
+     <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/Kabupaten Sumedang.svg">
+     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/vendor/slick/slick-theme.css">
+     <link rel="stylesheet" href="/vendor/slick/slick.css">
+     <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
+     <link rel="stylesheet" href="/vendor/datatable/datatables.min.css">
+     <link rel="stylesheet" href="/style/main.css">
+
+</head>
+
+<body>
+     <!-- Navbar -->
+     <nav class="navbar-fixed-top fixed-top">
+          <div class="navbar-sigeol">
+               <i class="fa-solid fa-bars-staggered sidebarOpen"></i>
+               <span class="logo d-flex align-items-center">
+                    <img src="/assets/img/Kabupaten Sumedang.svg" alt="" width="70px">
+                    <a href="index.html">
+                         <div class="title-web">
+                              <span class="title-top">Pemerintah Kabupaten</span>
+                              <span class="title-bottom">Sumedang</span>
+                         </div>
+
+                    </a>
+               </span>
+               <div class="menu">
+                    <div class="logo-toggle">
+                         <span class="logo d-flex align-items-center">
+                              <img src="/assets/img/Kabupaten Sumedang.svg" alt="" width="40px">
+                              <span class="title-sidebar">Pemerintah Kabupaten Sumedang</span>
+                         </span>
+                         <i class="fa-solid fa-xmark sidebarClose"></i>
+                    </div>
+                    <ul class="nav-link" id="nav-link">
+                         <li><a class="nav-item" href="#dataset-content" id="nav-dataset">Dataset Geospasial Populer</a>
+                         </li>
+                         <li><a class="nav-item" href="#storymap-content" id="nav-storymap">Story Maps</a></li>
+                         <li><a class="nav-item" href="#penghargaan-content" id="nav-penghargaan">Penghargaan</a></li>
+                         <li><a class="nav-item" href="#produk-content" id="nav-produk">Produk Hukum</a></li>
+                         <li><a class="nav-item" href="#mitra-content" id="nav-mitra">Mitra</a></li>
+                         <li><a class="nav-item" href="#">Peta Tematik</a></li>
+
+                    </ul>
+               </div>
+          </div>
+     </nav>
+     <!-- Navbar -->
+
+     <!-- page-content -->
+     <section class="page-content">
+          <!-- Header Hero -->
+          <div class="header-hero">
+               <div class="content-header">
+                    <div class="container">
+                         <div class="item-head">
+                              <h2 class="head-item-title">Portal untuk mengelola dan berbagi pakai data geospasial di
+                                   Jabar
+                              </h2>
+                              <span class="head-item-desc">
+                                   Mendukung upaya pengambilan keputusan dan perumusan
+                                   kebijakan strategis yang lebih terukur
+                              </span>
+                              <a href="#">Baca Selengkapnya ></a>
+                         </div>
+                    </div>
+                    <div class="item-count">
+                         <div class="container">
+                              <div class="row">
+                                   <div class="col-lg-4 col-md-4 col-sm-12 list-count">
+                                        <div class="icon-item">
+                                             <div class="item-icon">
+                                                  <img src="/assets/img/marker.svg" alt="icon marker">
+                                                  <span>125</span>
+
+                                             </div>
+                                             <div class="item-text">
+                                                  <h4>Total Dataset Geospasial</h4>
+                                                  <p>Kumpulan data yang masih berupa mapset yang dapat diolah dalam
+                                                       bentuk
+                                                       preview
+                                                       peta</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-4 col-sm-12 list-count">
+                                        <div class="icon-item">
+                                             <div class="item-icon">
+                                                  <img src="/assets/img/user.svg" alt="icon marker" width="120px">
+                                                  <span>17</span>
+
+                                             </div>
+                                             <div class="item-text">
+                                                  <h4>Total Organisasi</h4>
+                                                  <p>Organisasi Perangkat Daerah yang
+                                                       bergabung dan mempublikasikan datanya
+                                                       di Satu Peta Jabar</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-4 col-md-4 col-sm-12 list-count">
+                                        <div class="icon-item">
+                                             <div class="item-icon">
+                                                  <img src="/assets/img/copy.svg" alt="icon marker">
+                                                  <span>124</span>
+
+                                             </div>
+                                             <div class="item-text">
+                                                  <h4>Total Metadata Tersedia</h4>
+                                                  <p>Kumpulan metadata untuk menjamin
+                                                       kualitas mapset yang dirilis oleh
+                                                       Pemprov Jawa Barat</p>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+          </div>
+          <!-- Header Hero -->
+
+          <!-- Dataset Geospasial -->
+          <div class="dataset-content" id="dataset-content">
+               <div class="container">
+                    <div class="item-dataset">
+                         <h6 class="dataset-title"><span>Dataset Geospasial Populer
+                              </span></h6>
+                         <p class="dataset-desc">Dataset Geospasial yang paling banyak diminati masyarakat</p>
+                    </div>
+                    <div class="row">
+                         <div class="col-lg-3 col-md-6 col-sm-12 list-dataset">
+                              <div class="item-dataset-col">
+                                   <div class="map-thumbnail">
+                                        <img src="/assets/img/Sumedang Pemekaran 4.png" alt="Thumbnail Map Sumedang">
+
+                                   </div>
+                                   <div class="title-map">
+                                        <span>Sebaran Puskesmas</span>
+                                   </div>
+                                   <div class="desc-map">
+                                        <span class="desc">Berikut adalah data sebaran
+                                             puskesmasDi provinsi jawa barat.
+                                             Dan ini dipublikasikan oleh dinas
+                                             kesehatan.</span>
+                                        <a href="#" class="desc-more ">Baca Selengkapnya ></a>
+
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-12 list-dataset">
+                              <div class="item-dataset-col">
+                                   <div class="map-thumbnail">
+                                        <img src="/assets/img/Sumedang Pemekaran 4.png" alt="Thumbnail Map Sumedang">
+
+                                   </div>
+                                   <div class="title-map">
+                                        <span>Sebaran Puskesmas</span>
+                                   </div>
+                                   <div class="desc-map">
+                                        <span class="desc">Berikut adalah data sebaran
+                                             puskesmasDi provinsi jawa barat.
+                                             Dan ini dipublikasikan oleh dinas
+                                             kesehatan.</span>
+                                        <a href="#" class="desc-more ">Baca Selengkapnya ></a>
+
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-12 list-dataset">
+                              <div class="item-dataset-col">
+                                   <div class="map-thumbnail">
+                                        <img src="/assets/img/Sumedang Pemekaran 4.png" alt="Thumbnail Map Sumedang">
+
+                                   </div>
+                                   <div class="title-map">
+                                        <span>Sebaran Puskesmas</span>
+                                   </div>
+                                   <div class="desc-map">
+                                        <span class="desc">Berikut adalah data sebaran
+                                             puskesmasDi provinsi jawa barat.
+                                             Dan ini dipublikasikan oleh dinas
+                                             kesehatan.</span>
+                                        <a href="#" class="desc-more">Baca Selengkapnya ></a>
+
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-12 list-dataset vector">
+                              <img src="/assets/img/vector populer.svg" alt="" width="100%">
+                              <!-- <a href="#" class="link-more">Lihat Selengkapnya</a> -->
+                         </div>
+                    </div>
+               </div>
+
+          </div>
+          <!-- Dataset Geospasial -->
+
+          <!-- Storymap -->
+          <div class="storymap-content" id="storymap-content">
+               <div class="container">
+                    <div class="item-storymap">
+                         <h6 class="storymap-title"><span>Story Maps
+                              </span></h6>
+
+                    </div>
+                    <div class="storymap-group">
+
+                         </button>
+                         <div class="list-storymap">
+                              <div class="head-list">
+                                   <img src="/assets/img/Sumedang Pemekaran 4.png" alt="">
+                              </div>
+                              <div class="body-list">
+                                   <div class="title-desc">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="title">
+                                             <span>Desa Digital Sumedang</span>
+                                        </div>
+                                        <div class="desc">
+                                             Melakukan sosialisasi terkait
+                                             pemanfaatanInternet sebagai langkah
+                                             untukmeminimalisisr dampak negatif
+                                             daridigitalisasi
+                                        </div>
+                                        <div class="desc-more">
+                                             <a href="#">Baca Selengkapnya ></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="list-storymap">
+                              <div class="head-list">
+                                   <img src="/assets/img/Sumedang Pemekaran 4.png" alt="">
+                              </div>
+                              <div class="body-list">
+                                   <div class="title-desc">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="title">
+                                             <span>Desa Digital Sumedang</span>
+                                        </div>
+                                        <div class="desc">
+                                             Melakukan sosialisasi terkait
+                                             pemanfaatanInternet sebagai langkah
+                                             untukmeminimalisisr dampak negatif
+                                             daridigitalisasi
+                                        </div>
+                                        <div class="desc-more">
+                                             <a href="#">Baca Selengkapnya ></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="list-storymap">
+                              <div class="head-list">
+                                   <img src="/assets/img/Sumedang Pemekaran 4.png" alt="">
+                              </div>
+                              <div class="body-list">
+                                   <div class="title-desc">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="title">
+                                             <span>Desa Digital Sumedang</span>
+                                        </div>
+                                        <div class="desc">
+                                             Melakukan sosialisasi terkait
+                                             pemanfaatanInternet sebagai langkah
+                                             untukmeminimalisisr dampak negatif
+                                             daridigitalisasi
+                                        </div>
+                                        <div class="desc-more">
+                                             <a href="#">Baca Selengkapnya ></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="list-storymap">
+                              <div class="head-list">
+                                   <img src="/assets/img/Sumedang Pemekaran 4.png" alt="">
+                              </div>
+                              <div class="body-list">
+                                   <div class="title-desc">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="title">
+                                             <span>Desa Digital Sumedang</span>
+                                        </div>
+                                        <div class="desc">
+                                             Melakukan sosialisasi terkait
+                                             pemanfaatanInternet sebagai langkah
+                                             untukmeminimalisisr dampak negatif
+                                             daridigitalisasi
+                                        </div>
+                                        <div class="desc-more">
+                                             <a href="#">Baca Selengkapnya ></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="list-storymap">
+                              <div class="head-list">
+                                   <img src="/assets/img/Sumedang Pemekaran 4.png" alt="">
+                              </div>
+                              <div class="body-list">
+                                   <div class="title-desc">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="title">
+                                             <span>Desa Digital Sumedang</span>
+                                        </div>
+                                        <div class="desc">
+                                             Melakukan sosialisasi terkait
+                                             pemanfaatanInternet sebagai langkah
+                                             untukmeminimalisisr dampak negatif
+                                             daridigitalisasi
+                                        </div>
+                                        <div class="desc-more">
+                                             <a href="#">Baca Selengkapnya ></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+          <!-- Storymap -->
+
+          <!-- Webgis -->
+          <div class="webgis-content" id="webgis-content">
+               <div class="container">
+                    <div class="item-webgis">
+                         <h6 class="webgis-title"><span>WebGIS
+                              </span></h6>
+                         <p class="dataset-desc">Transformasi digital pada pemanfaatan data geospasial sektoral.
+                         </p>
+                    </div>
+                    <div class="table-webgis">
+                         <table class="table table-hover" id="example-table">
+                              <thead class="thead-webgis">
+                                   <tr>
+                                        <td>Nama WebGIS</td>
+                                        <td>Nama Perangkat Daerah</td>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                                   <tr>
+                                        <td>WebGIS Satgas Citarum</td>
+                                        <td>WebGIS Satgas Citarum</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+               </div>
+          </div>
+          <!-- Webgis -->
+
+          <!-- Penghargaan -->
+          <div class="penghargaan-content" id="penghargaan-content">
+               <div class="container">
+                    <div class="item-penghargaan">
+                         <h6 class="penghargaan-title"><span>Penghargaan
+                              </span></h6>
+                    </div>
+                    <div class="row">
+                         <div class="col-lg-3 col-md-6 col-sm-12 list-penghargaan vector">
+                              <img src="/assets/img/vector penghargaan.svg" alt="" width="100%">
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-12 list-penghargaan">
+                              <div class="item-penghargaan-col">
+                                   <div class="penghargaan-thumbnail">
+                                        <img src="/assets/img/trophy.png" alt="Trophy">
+
+                                   </div>
+                                   <div class="desc-penghargaan">
+                                        <span class="title-penghargaan">Bhumandala 2014</span>
+                                        <span class="desc">Bhumandala 2014 diselenggarakan
+                                             olehBadan Informasi Geospasial -
+                                             Provinsi Terbaik ke III</span>
+                                        <span class="desc-more">Badan Informasi Geospasial</span>
+
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-12 list-penghargaan">
+                              <div class="item-penghargaan-col">
+                                   <div class="penghargaan-thumbnail">
+                                        <img src="/assets/img/trophy.png" alt="Trophy">
+
+                                   </div>
+                                   <div class="desc-penghargaan">
+                                        <span class="title-penghargaan">Bhumandala 2014</span>
+                                        <span class="desc">Bhumandala 2014 diselenggarakan
+                                             olehBadan Informasi Geospasial -
+                                             Provinsi Terbaik ke III</span>
+                                        <span class="desc-more">Badan Informasi Geospasial</span>
+
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-12 list-penghargaan">
+                              <div class="item-penghargaan-col">
+                                   <div class="penghargaan-thumbnail">
+                                        <img src="/assets/img/trophy.png" alt="Trophy">
+
+                                   </div>
+                                   <div class="desc-penghargaan">
+                                        <span class="title-penghargaan">Bhumandala 2014</span>
+                                        <span class="desc">Bhumandala 2014 diselenggarakan
+                                             olehBadan Informasi Geospasial -
+                                             Provinsi Terbaik ke III</span>
+                                        <span class="desc-more">Badan Informasi Geospasial</span>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!-- Penghargaan -->
+
+          <!-- Produk hukum -->
+          <div class="produk-content" id="produk-content">
+               <div class="container">
+                    <div class="item-produk">
+                         <h6 class="produk-title"><span>Produk Hukum
+                              </span></h6>
+                         <p class="dataset-desc">Transformasi digital pada pemanfaatan data geospasial sektoral.
+                         </p>
+                    </div>
+                    <div class="row">
+                         <div class="col-lg-9 col-md-9 col-sm-12 list-produk">
+                              <div class="produk-group">
+                                   <div class="icon-title-produk">
+                                        <div class="icon-produk">
+                                             <img src="/assets/img/icon pdf.png" alt="pdf" width="40px">
+                                        </div>
+                                        <div class="title-produk">
+                                             Transformasi digital pada pemanfaatan data geospasial sektoral.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="produk-group">
+                                   <div class="icon-title-produk">
+                                        <div class="icon-produk">
+                                             <img src="/assets/img/icon pdf.png" alt="pdf" width="40px">
+                                        </div>
+                                        <div class="title-produk">
+                                             Transformasi digital pada pemanfaatan data geospasial sektoral.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="produk-group">
+                                   <div class="icon-title-produk">
+                                        <div class="icon-produk">
+                                             <img src="/assets/img/icon pdf.png" alt="pdf" width="40px">
+                                        </div>
+                                        <div class="title-produk">
+                                             Transformasi digital pada pemanfaatan data geospasial sektoral.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="produk-group">
+                                   <div class="icon-title-produk">
+                                        <div class="icon-produk">
+                                             <img src="/assets/img/icon pdf.png" alt="pdf" width="40px">
+                                        </div>
+                                        <div class="title-produk">
+                                             Transformasi digital pada pemanfaatan data geospasial sektoral.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="produk-group">
+                                   <div class="icon-title-produk">
+                                        <div class="icon-produk">
+                                             <img src="/assets/img/icon pdf.png" alt="pdf" width="40px">
+                                        </div>
+                                        <div class="title-produk">
+                                             Transformasi digital pada pemanfaatan data geospasial sektoral.
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-lg-3 col-md-3 col-sm-12 list-produk vector">
+                              <div class="img">
+                                   <img src="/assets/img/vector produk.svg" alt="Book" width="100%">
+                              </div>
+
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+          <!-- Produk hukum -->
+
+          <!-- Mitra -->
+          <div class="mitra-content" id="mitra-content">
+               <div class="container">
+                    <div class="item-mitra">
+                         <h6 class="mitra-title"><span>Mitra
+                              </span></h6>
+                         <p class="dataset-desc">Transformasi digital pada pemanfaatan data geospasial sektoral.
+                         </p>
+                    </div>
+                    <div class="mitra-slide">
+                         <div class="mitra-group"><img src="/assets/img/logo mitra.png" alt=""></div>
+                         <div class="mitra-group"><img src="/assets/img/logo mitra.png" alt=""></div>
+                         <div class="mitra-group"><img src="/assets/img/logo mitra.png" alt=""></div>
+                         <div class="mitra-group"><img src="/assets/img/logo mitra.png" alt=""></div>
+                         <div class="mitra-group"><img src="/assets/img/logo mitra.png" alt=""></div>
+                         <div class="mitra-group"><img src="/assets/img/logo mitra.png" alt=""></div>
+                         <div class="mitra-group"><img src="/assets/img/logo mitra.png" alt=""></div>
+                         <div class="mitra-group"><img src="/assets/img/logo mitra.png" alt=""></div>
+                    </div>
+               </div>
+          </div>
+          <!-- Mitra -->
+
+          <button onclick="topFunction()" id="btn-top" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+     </section>
+     <!-- page-content -->
+
+     <!-- footer -->
+     <footer>
+          <div class="container">
+               <div class="item-footer">
+                    <div class="title-footer">
+                         <h4>Ikuti Kami</h4>
+                    </div>
+                    <div class="sosmed">
+                         <ul>
+                              <li>
+                                   <a href="#">
+                                        <img src="/assets/img/fb.png" alt="">
+                                        <span>Facebook</span>
+                                   </a>
+
+                              </li>
+                              <li>
+                                   <a href="#">
+                                        <img src="/assets/img/ig.png" alt="">
+                                        <span>Instagram</span>
+                                   </a>
+                              </li>
+                              <li>
+                                   <a href="#">
+                                        <img src="/assets/img/tw.png" alt="">
+                                        <span>Twitter</span>
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </footer>
+     <!-- footer -->
+
+
+     <script src="/vendor/jquery/jquery-3.6.1.min.js"></script>
+     <script src="/vendor/jquery/jquery-nav.js"></script>
+     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="/vendor/slick/slick.min.js"></script>
+     <script src="/vendor/datatable/datatables.min.js"></script>
+     <script src="/script/navbar.js"></script>
+     <script>
+          //datatable webgis
+          $(document).ready(function () {
+               $('#example-table').DataTable({
+                    scrollY: '50vh',
+                    scrollCollapse: true,
+
+               });
+          });
+
+          //scrollTo
+          // $(document).ready(function () {
+          //      $("#nav-dataset").click(function () {
+          //           $('html, body').animate({
+          //                scrollTop: $("#dataset-content").offset().top - 110
+          //           });
+          //      });
+          //      $("#nav-storymap").click(function () {
+          //           $('html, body').animate({
+          //                scrollTop: $("#storymap-content").offset().top - 90
+          //           });
+          //      });
+          //      $("#nav-penghargaan").click(function () {
+          //           $('html, body').animate({
+          //                scrollTop: $("#penghargaan-content").offset().top - 100
+          //           });
+          //      });
+          //      $("#nav-produk").click(function () {
+          //           $('html, body').animate({
+          //                scrollTop: $("#produk-content").offset().top - 100
+          //           });
+          //      });
+          //      $("#nav-mitra").click(function () {
+          //           $('html, body').animate({
+          //                scrollTop: $("#mitra-content").offset().top - 100
+          //           });
+          //      });
+
+          //      $('#nav-link').onePageNav();
+          // });
+
+
+          //slider storymap
+          $(document).ready(function () {
+               $('.storymap-group').slick({
+                    centerMode: true,
+                    infinite: true,
+                    centerPadding: '0px',
+                    slidesToShow: 3,
+                    dots: true,
+                    focusOnSelect: true,
+                    nextArrow: '<img class="btn-slider" src="/assets/img/btn-right.png" alt="" />',
+                    prevArrow: '<img class="btn-slider" src="/assets/img/btn-left.png" alt="" />',
+
+                    responsive: [{
+                              breakpoint: 768,
+                              settings: {
+                                   arrows: false,
+                                   centerPadding: '40px',
+                                   slidesToShow: 1
+                              }
+                         },
+                         {
+                              breakpoint: 480,
+                              settings: {
+                                   arrows: false,
+                                   centerPadding: '40px',
+                                   slidesToShow: 1
+                              }
+                         }
+                    ]
+               });
+
+          });
+
+          //slider mitra
+          $(document).ready(function () {
+               $('.mitra-slide').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 6,
+                    slidesToScroll: 6,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    responsive: [{
+                              breakpoint: 1024,
+                              settings: {
+                                   slidesToShow: 3,
+                                   slidesToScroll: 3,
+                                   infinite: true,
+                                   dots: false
+                              }
+                         },
+                         {
+                              breakpoint: 600,
+                              settings: {
+                                   slidesToShow: 2,
+                                   slidesToScroll: 2
+                              }
+                         },
+                         {
+                              breakpoint: 480,
+                              settings: {
+                                   slidesToShow: 1,
+                                   slidesToScroll: 1
+                              }
+                         }
+                         // You can unslick at a given breakpoint now by adding:
+                         // settings: "unslick"
+                         // instead of a settings object
+                    ]
+               });
+          });
+
+          $('#nav-link').onePageNav({});
+     </script>
+
+</body>
+
+</html>

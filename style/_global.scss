@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+     //color
+     --primary-color: #3927BA;
+     --secondary-color: #5842F7;
+     --default-color: #fff;
+
+
+     //font color
+     --font-h: #16161a;
+     --font-p: #16161a;
+     --font-btn: #fff;
+     --font-btn-hvr: #fff;
+     --font-nav: #444444;
+     --font-logo: black;
+     --font-footer: black;
+
+     //button
+     --btn-primary: black;
+     --btn-hover: #494949;
+
+
+}
+
+body {
+     font-family: "poppins", sans-serif;
+     width: 100%;
+     position: relative;
+     background-color: var(--bg-color);
+}
+
+.page-content {
+     margin-top: 80px;
+}
+
+/* ===== Scrollbar CSS ===== */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+     width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+     background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+     background-color: #dedede;
+     border-radius: 13px;
+     border: 3px solid #ffffff;
+}
