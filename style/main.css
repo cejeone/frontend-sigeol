@@ -11152,7 +11152,7 @@ nav .navbar-sigeol .nav-link a.active {
   display: flex;
   flex-direction: column;
   margin: 80px 0;
-  width: 50%;
+  width: 60%;
 }
 @media (max-width: 767.98px) {
   .header-hero .content-header .item-head {
